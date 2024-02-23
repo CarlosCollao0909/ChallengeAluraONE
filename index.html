@@ -16,24 +16,27 @@
                     <img src="./images/Logo.png" alt="">
                 </header>
 
-                <textarea class="texto" placeholder="Ingrese el texto aqui"></textarea>
+                <textarea class="texto" id="textoIngresado" placeholder="Ingrese el texto aqui"></textarea>
                 
                 <div class="botones">
-                    <button class="btnEncriptar">Encriptar</button>
-                    <button class="btnDesencriptar">Desencriptar</button>
+                    <button class="btnEncriptar" onclick="encriptarTexto();">Encriptar</button>
+                    <button class="btnDesencriptar" onclick="desencriptarTexto();">Desencriptar</button>
                 </div>
             </section>
             <section class="salidaEncriptador">
+                <textarea class="textoSalida" id="textoEncriptado"></textarea>
                 <div class="messages">
                     <img src="./images/Muñeco.png" alt="">
                     <img src="./images/message.png" alt="">
                 </div>
                 <div class="boton">
-                    <button class="btnCopiar">Copiar</button>
+                    <button class="btnCopiar" onclick="copiarTexto();">Copiar</button>
                 </div>
             </section>
         </main>
     </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>

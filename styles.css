@@ -32,6 +32,7 @@ header{
     color: #0A3871;
     border: none;
     outline: none;
+    resize: none;
     background: #F3F5FC;
 }
 .botones{
@@ -42,6 +43,7 @@ header{
 .btnEncriptar{
     width: 212px;
     height: 52px;
+    font-weight: bold;
     background: #0A3871;
     color: #ffffff;
     border: none;
@@ -51,6 +53,7 @@ header{
 .btnDesencriptar, .btnCopiar{
     width: 212px;
     height: 52px;
+    font-weight: bold;
     background: #F3F5FC;
     color: #0A3871;
     border: 2px solid #0A3871;
@@ -65,10 +68,31 @@ header{
     border-radius: 40px;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
+.textoSalida{
+    margin: 20px 35px;
+    width: 75%;
+    height: 80%;
+    font-size: 25px;
+    color: #0A3871;
+    border: none;
+    outline: none;
+    resize: none;
+    background: #ffffff;
+    display: none;
+}
 .messages{
-    margin-top: 20px;
+    margin-top: 100px;
     height: 85%;
 }
 .boton{
     height: 15%;
+}
+.btnEncriptar:hover, .btnDesencriptar:hover, .btnCopiar:hover{
+    scale: 1.1;
+    transition: 0.6s;
+    border: 2px solid #0A3871;
+    cursor: pointer;
+}
+.btnCopiar{
+    visibility: hidden;
 }
