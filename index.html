@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Encriptador de texto</title>
 </head>
+
 <body>
     <div class="container">
         <main class="main">
-            <header>
-                <img src="./images/Logo.png" alt="">
-            </header>
             <section class="entradaEncriptador">
+                <header>
+                    <img src="./images/Logo.png" alt="">
+                </header>
 
+                <textarea class="texto" placeholder="Ingrese el texto aqui"></textarea>
+                
                 <div class="botones">
-                    <button>Encriptar</button>
-                    <button>Desencriptar</button>
+                    <button class="btnEncriptar">Encriptar</button>
+                    <button class="btnDesencriptar">Desencriptar</button>
                 </div>
             </section>
             <section class="salidaEncriptador">
@@ -23,11 +28,12 @@
                     <img src="./images/Muñeco.png" alt="">
                     <img src="./images/message.png" alt="">
                 </div>
-                <div class="btnCopiar">
-                    <button>Copiar</button>
+                <div class="boton">
+                    <button class="btnCopiar">Copiar</button>
                 </div>
             </section>
         </main>
     </div>
 </body>
+
 </html>
